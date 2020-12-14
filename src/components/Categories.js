@@ -6,7 +6,7 @@ const Categories = ({ categories, active, filterCategory }) => {
         <div className='btn-container'>
             {
                 categories.map((category, index) => (
-                    <button key={index} className={`filter-btn ${active === category ? "active-btn" : null}`} onClick={()=> filterCategory(category)}>{category}</button>
+                    <button key={index} className={`filter-btn ${active === category ? "active-btn" : null }`} onClick={()=> filterCategory(category)}>{category}</button>
                 ))
             }
         </div>

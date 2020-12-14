@@ -9,7 +9,7 @@ function App() {
 
   const [ menuItems, setMenuItems ] = useState(data)
   const [ categories, setCategory ] = useState([])
-  const [ active, setActive ] = useState(false)
+  const [ active, setActive ] = useState('all')
 
   
 
@@ -19,7 +19,7 @@ function App() {
     return category === 'all' ? setMenuItems(data) : setMenuItems(newItems)
   }
 
-  useEffect(()=> {
+  useEffect(() => {
     setCategory(menuCategories)
   },[])
 
